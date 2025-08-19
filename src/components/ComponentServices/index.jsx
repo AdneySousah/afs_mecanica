@@ -11,7 +11,7 @@ export function ServicesComponent() {
     },[])
 
     return (
-        <ContainerServices>
+        <ContainerServices id="servicos">
             <ContainerText>
                 <Title>Nossos Serviços</Title>
                 <Text>Oferecemos soluções completas para manter seus equipamentos de jardinagem funcionando <br />com máxima eficiência e durabilidade.</Text>

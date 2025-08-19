@@ -1,14 +1,22 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
 import { Gavel, MapPinHouse, Phone, Menu, X } from 'lucide-react';
 import { Container, ContainerContato, ContainerLogo, Navbar, TextLogo, NavButton, TextContato, TextEndereco, MobileMenuButton, MobileNavbar } from "./styles";
 
 export function HeaderComponent() {
-    const { pathname } = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState('home'); // Novo estado para a seção ativa
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            setActiveSection(id); // Atualiza a seção ativa
+            setIsMenuOpen(false); // Fecha o menu mobile após a rolagem
+        }
     };
 
     return (
@@ -24,9 +32,9 @@ export function HeaderComponent() {
             </ContainerLogo>
 
             <Navbar>
-                <NavButton to="/" $isActive={pathname === '/'}>Inicio</NavButton>
-                <NavButton to="/servicos">Serviços</NavButton>
-                <NavButton to="/contato">Contato</NavButton>
+                <NavButton onClick={() => scrollToSection('home')} $isActive={activeSection === 'home'}>Inicio</NavButton>
+                <NavButton onClick={() => scrollToSection('servicos')} $isActive={activeSection === 'servicos'}>Serviços</NavButton>
+                <NavButton onClick={() => scrollToSection('contato')} $isActive={activeSection === 'contato'}>Contato</NavButton>
             </Navbar>
 
             <ContainerContato>
@@ -40,9 +48,9 @@ export function HeaderComponent() {
 
             {isMenuOpen && (
                 <MobileNavbar>
-                    <NavButton to="/" $isActive={pathname === '/'}>Inicio</NavButton>
-                    <NavButton to="/servicos">Serviços</NavButton>
-                    <NavButton to="/contato">Contato</NavButton>
+                    <NavButton onClick={() => scrollToSection('home')} $isActive={activeSection === 'home'}>Inicio</NavButton>
+                    <NavButton onClick={() => scrollToSection('servicos')} $isActive={activeSection === 'servicos'}>Serviços</NavButton>
+                    <NavButton onClick={() => scrollToSection('contato')} $isActive={activeSection === 'contato'}>Contato</NavButton>
                 </MobileNavbar>
             )}
         </Container>

@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,8 +46,9 @@ export const Navbar = styled.div`
     }
 `;
 
-export const NavButton = styled(Link)`
+export const NavButton = styled.button`
     text-decoration: none;
+    border: none;
     color: ${props => props.$isActive ? '#fff' : '#333'};
     background-color: ${props => props.$isActive ? '#15803d' : 'transparent'};
     padding: 10px 15px;
@@ -90,7 +96,7 @@ export const MobileMenuButton = styled.button`
 export const MobileNavbar = styled.div`
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 80px;
     left: 0;
     width: 100%;

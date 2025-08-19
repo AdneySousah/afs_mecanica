@@ -5,7 +5,7 @@ import { Phone } from "lucide-react"
 
 export function HomeComponent() {
     return (
-        <ContainerHome>
+        <ContainerHome id="home">
             <ContainerImagem>
                 <Content>
                     <ContainerText>

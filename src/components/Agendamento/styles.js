@@ -50,6 +50,18 @@ export const ContainerButtons = styled.div`
     display: flex;
     gap: 20px;
     
+    .btnContato {
+    background-color: #fff;
+    color: #15803d;
+
+    &:hover {
+        background-color: rgba(158, 235, 71, 0.2);
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+
     @media (max-width: 768px) {
         flex-direction: column;
         width: 100%;

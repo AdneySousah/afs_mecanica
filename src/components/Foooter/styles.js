@@ -48,7 +48,8 @@ export const ContainerCopy = styled.div`
 
 export const Title = styled.h1`
   font-size: 1.4rem;
-  margin-bottom: 10px;
+  
+
 `;
 
 export const Text = styled.p`
@@ -56,6 +57,7 @@ export const Text = styled.p`
   display: flex;
   align-items: center;
   gap: 8px;
+
 
   /* No mobile, centraliza ícones e textos */
   @media (max-width: 600px) {

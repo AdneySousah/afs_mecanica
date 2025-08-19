@@ -16,14 +16,14 @@ export function ComponentAgendamento() {
     };
 
     return(
-        <ContainerImagem>
+        <ContainerImagem id='contato'>
             <ContainerTexts>
                 <Title>Seu Equipamento Precisa de Conserto?</Title>
                 <Text>Entre em contato conosco hoje mesmo e receba um orçamento gratuito. Nossa equipe está pronta para devolver a vida aos seus equipamentos!</Text>
             </ContainerTexts>
             <ContainerButtons>
                 <Button onClick={handleCall}>Ligar Agora: (31) 9 8269-6296</Button>
-                <Button onClick={handleWhatsApp}>Chamar no Whatsapp</Button>
+                <Button onClick={handleWhatsApp} className="btnContato">Chamar no Whatsapp</Button>
             </ContainerButtons>
             <ContainerInstrucoes>
                 <h1>Como Funciona</h1>

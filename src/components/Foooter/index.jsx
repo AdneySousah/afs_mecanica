@@ -15,6 +15,7 @@ export function Footer() {
                 <ContainerContato>
                     <Title>Contato</Title>
                     <Text> <Phone /> (31) 8269-6296</Text>
+                    <br />
                     <Text> <MapPinHouse /> R. Santa Luzia, 2175 - Nossa Sra. de Fatima, Sabará - MG</Text>
                 </ContainerContato>
 
