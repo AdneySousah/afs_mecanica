@@ -4,7 +4,7 @@ import ContainerImg from '../../assets/containerimg.png';
 
 
 export const ContainerHome = styled.div`
-    margin-top: 100px;
+    margin-top: 83px;
     width: 100%;
     color: #fff;
 `;

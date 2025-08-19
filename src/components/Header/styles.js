@@ -28,6 +28,12 @@ export const ContainerLogo = styled.div`
         font-size: 0.7rem;
         margin: 0;
     }
+
+    @media (max-width: 768px){
+        .imgLogo{
+            display: none;
+        }
+    }
 `;
 
 export const TextLogo = styled.h1`
