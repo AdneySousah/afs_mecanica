@@ -1,12 +1,10 @@
 import styled from "styled-components";
 import ContainerImg from '../../assets/containerimg.png';
 
-export const Container = styled.div`
-    width: 100vw;
-    min-height: 100vh; /* Usa min-height para permitir que o conteúdo empurre o layout */
-`;
+
 
 export const ContainerHome = styled.div`
+    margin-top: 100px;
     width: 100%;
     color: #fff;
 `;
