@@ -35,6 +35,7 @@ export function HeaderComponent() {
                 <NavButton onClick={() => scrollToSection('home')} $isActive={activeSection === 'home'}>Inicio</NavButton>
                 <NavButton onClick={() => scrollToSection('servicos')} $isActive={activeSection === 'servicos'}>Serviços</NavButton>
                 <NavButton onClick={() => scrollToSection('contato')} $isActive={activeSection === 'contato'}>Contato</NavButton>
+                <NavButton onClick={() => scrollToSection('equipamentos')} $isActive={activeSection === 'equipamentos'}>Equipamentos</NavButton>
             </Navbar>
 
             <ContainerContato>
