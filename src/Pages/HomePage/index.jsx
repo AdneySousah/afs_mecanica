@@ -6,6 +6,7 @@ import { ServicesComponent } from "../../components/ComponentServices"
 import { Vantagens } from "../../components/ComponentVantagens"
 import { ComponentAgendamento } from "../../components/Agendamento"
 import { Footer } from "../../components/Foooter"
+import { EquipamentosComponent } from "../../components/Equipamentos"
 export function HomePage() {
 
     return (
@@ -16,6 +17,7 @@ export function HomePage() {
             <HomeComponent/>
             <ServicesComponent/>
             <Vantagens/>
+            <EquipamentosComponent/>
             <ComponentAgendamento/>
             <Footer/>
         </Container>

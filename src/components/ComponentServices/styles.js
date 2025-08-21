@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerServices = styled.div`
+margin-top: 150px;
     width: 100%;
     padding: 0 80px;
 
